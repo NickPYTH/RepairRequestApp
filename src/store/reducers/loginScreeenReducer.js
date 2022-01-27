@@ -3,8 +3,8 @@ import {UPDATE_LOGIN_INPUT, UPDATE_PASSWORD_INPUT} from "../types/loginScreenTyp
 const INITIAL_STATE = {
     login: "",
     password: "",
-    isAuth: false,
-    role: null,
+    isAuth: true,
+    role: "user",
 }
 
 export const loginScreenReducer = (state = INITIAL_STATE, action) => {

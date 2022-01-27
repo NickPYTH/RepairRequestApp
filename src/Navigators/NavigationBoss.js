@@ -1,9 +1,9 @@
 import {StyleSheet, Text} from "react-native";
-import {UserNavigation} from "./userNavigation";
+import {UserNavigation} from "./userNavigation/userNavigation";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {LoginScreen} from "../Screens/LoginScreen";
-import {AdminNavigation} from "./adminNavigation";
+import {AdminNavigation} from "./adminNavigation/adminNavigation";
 
 const NavigationBossLayout = ({info}) => {
     if (info.isAuth) {

@@ -1,17 +1,22 @@
 import {View, Text, StyleSheet} from "react-native";
+import {RepairCard} from "../Components/UserScreen/repairCard";
 
 export const UserScreen = ({}) => {
     return(
-        <View style={styles.marginTop}>
-            <Text>
-                User Screen
-            </Text>
+        <View style={styles.cardListWrapper}>
+            <RepairCard />
         </View>
     )
 }
 
+
+
 const styles = StyleSheet.create({
-    marginTop: {
-        marginTop: 500,
+    cardListWrapper: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+        alignItems: "center",
+        width: "100%",
     }
 })
